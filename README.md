@@ -38,7 +38,7 @@ This site teaches AI from a management and research perspective through a shared
 
 ### URL Structure
 
-```text/
+```text
 /
 /foundation/f1-1-from-rules-to-learning-to-generation/
 /foundation/f1-2-live-ai-vs-marketing-hype/
