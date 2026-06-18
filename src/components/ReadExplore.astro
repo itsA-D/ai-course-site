@@ -1,0 +1,37 @@
+---
+// ReadExplore.astro - Styled link list for reading/explore section
+interface Props {
+  links: Array<{
+    label: string;
+    url: string;
+  }>;
+}
+
+const { links } = Astro.props;
+---
+
+<ul class="read-explore-list">
+  {links.map((link) => (
+    <li>
+      <a href={link.url} target="_blank" rel="noopener">{link.label}</a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .read-explore-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .read-explore-list li {
+    margin-bottom: 0.5rem;
+  }
+  .read-explore-list a {
+    color: var(--accent-mint);
+    text-decoration: none;
+  }
+  .read-explore-list a:hover {
+    text-decoration: underline;
+  }
+</style>

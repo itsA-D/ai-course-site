@@ -1,0 +1,57 @@
+---
+// TrackCard.astro - Homepage track-picker card
+interface Props {
+  title: string;
+  description: string;
+  audience: string;
+  ctaHref: string;
+}
+
+const { title, description, audience, ctaHref } = Astro.props;
+---
+
+<div class="track-card">
+  <h2>{title}</h2>
+  <p class="audience">For: {audience}</p>
+  <p class="description">{description}</p>
+  <a href={ctaHref} class="cta">Start Learning →</a>
+</div>
+
+<style>
+  .track-card {
+    padding: 2rem;
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 0.5rem;
+    background: var(--sl-color-bg-sidebar);
+    transition: border-color 0.2s ease;
+  }
+  .track-card:hover {
+    border-color: var(--accent-mint);
+  }
+  .track-card h2 {
+    margin: 0 0 0.5rem 0;
+    color: var(--accent-mint);
+  }
+  .track-card .audience {
+    margin: 0 0 1rem 0;
+    font-size: 0.875rem;
+    color: var(--sl-color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .track-card .description {
+    margin: 0 0 1.5rem 0;
+  }
+  .track-card .cta {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--accent-mint);
+    color: var(--sl-color-bg);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+  }
+  .track-card .cta:hover {
+    opacity: 0.9;
+  }
+</style>

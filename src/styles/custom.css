@@ -1,0 +1,80 @@
+/* Custom CSS variables for AI for Management & Research */
+
+/* Dark mode (default) */
+:root,
+[data-theme='dark'] {
+  /* Color palette */
+  --sl-color-bg: #0B0E14;
+  --sl-color-bg-nav: #141925;
+  --sl-color-bg-sidebar: #141925;
+  --sl-color-bg-inline-code: #1B2230;
+  --sl-color-text: #E8EAF0;
+  --sl-color-text-secondary: #8B93A7;
+  --sl-color-accent: #2DD4BF;
+  --sl-color-accent-low: rgba(45, 212, 191, 0.15);
+  --sl-color-hairline: #2A3142;
+  --sl-color-gray-1: #E8EAF0;
+  --sl-color-gray-2: #8B93A7;
+  --sl-color-gray-3: #2A3142;
+  --sl-color-gray-4: #141925;
+  --sl-color-gray-5: #0B0E14;
+  --sl-color-gray-6: #0B0E14;
+  --sl-color-gray-7: #0B0E14;
+
+  /* Custom accent colors */
+  --accent-mint: #2DD4BF;
+  --accent-indigo: #6C8DF7;
+  --accent-amber: #F2B84B;
+
+  /* Typography */
+  --sl-font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --sl-font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --sl-text-base: 16px;
+  --sl-line-height: 1.6;
+  --sl-content-width: 720px;
+}
+
+/* Light mode */
+[data-theme='light'] {
+  --sl-color-bg: #ffffff;
+  --sl-color-bg-nav: #f5f5f5;
+  --sl-color-bg-sidebar: #f5f5f5;
+  --sl-color-bg-inline-code: #e8e8e8;
+  --sl-color-text: #1a1a1a;
+  --sl-color-text-secondary: #666666;
+  --sl-color-accent: #0d9488;
+  --sl-color-accent-low: rgba(13, 148, 136, 0.1);
+  --sl-color-hairline: #d0d0d0;
+  --sl-color-gray-1: #1a1a1a;
+  --sl-color-gray-2: #666666;
+  --sl-color-gray-3: #d0d0d0;
+  --sl-color-gray-4: #e8e8e8;
+  --sl-color-gray-5: #f5f5f5;
+  --sl-color-gray-6: #ffffff;
+  --sl-color-gray-7: #ffffff;
+
+  /* Custom accent colors (slightly deeper saturation for contrast) */
+  --accent-mint: #0d9488;
+  --accent-indigo: #4f46e5;
+  --accent-amber: #d97706;
+}
+
+/* Typography overrides */
+:root {
+  --sl-text-sm: 0.875rem;
+  --sl-text-base: 1rem;
+  --sl-text-lg: 1.125rem;
+  --sl-text-xl: 1.25rem;
+  --sl-text-2xl: 1.5rem;
+  --sl-text-3xl: 1.875rem;
+  --sl-text-4xl: 2.25rem;
+}
+
+/* Label/eyebrow styling */
+.eyebrow,
+.module-code {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  font-weight: 600;
+}

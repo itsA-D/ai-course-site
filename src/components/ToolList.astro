@@ -1,0 +1,54 @@
+---
+// ToolList.astro - Card grid for free tools
+interface Props {
+  tools: Array<{
+    name: string;
+    url: string;
+    description: string;
+  }>;
+}
+
+const { tools } = Astro.props;
+---
+
+<div class="tool-list">
+  {tools.map((tool) => (
+    <div class="tool-card">
+      <h3><a href={tool.url} target="_blank" rel="noopener">{tool.name}</a></h3>
+      <p>{tool.description}</p>
+    </div>
+  ))}
+</div>
+
+<style>
+  .tool-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  .tool-card {
+    padding: 1rem;
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 0.5rem;
+    background: var(--sl-color-bg-sidebar);
+    transition: background 0.2s ease;
+  }
+  .tool-card:hover {
+    background: var(--bg-surface-raised);
+  }
+  .tool-card h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  .tool-card h3 a {
+    color: var(--accent-mint);
+    text-decoration: none;
+  }
+  .tool-card h3 a:hover {
+    text-decoration: underline;
+  }
+  .tool-card p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--sl-color-text-secondary);
+  }
+</style>

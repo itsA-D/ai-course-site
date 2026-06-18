@@ -1,0 +1,64 @@
+---
+// RoadmapTimeline.astro - Vertical timeline for capstone pages
+interface Props {
+  stages: Array<{
+    label: string;
+    description: string;
+  }>;
+}
+
+const { stages } = Astro.props;
+---
+
+<div class="roadmap-timeline">
+  {stages.map((stage, index) => (
+    <div class="timeline-stage">
+      <div class="timeline-node"></div>
+      <div class="timeline-content">
+        <h3>{stage.label}</h3>
+        <p>{stage.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .roadmap-timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+  .roadmap-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--sl-color-hairline);
+  }
+  .timeline-stage {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .timeline-node {
+    position: absolute;
+    left: -2rem;
+    top: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--accent-mint);
+    box-shadow: 0 0 0.5rem var(--accent-mint);
+  }
+  .timeline-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--accent-mint);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.875rem;
+  }
+  .timeline-content p {
+    margin: 0;
+    color: var(--sl-color-text-secondary);
+  }
+</style>
