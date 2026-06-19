@@ -12,7 +12,7 @@ A free, public curriculum website teaching AI from a management and research per
 [![Last commit](https://img.shields.io/github/last-commit/itsA-D/ai-course-site)](https://github.com/itsA-D/ai-course-site/commits/main)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/itsA-D/ai-course-site/pulls)
 
-[View Live Site →](https://itsA-D.github.io/ai-course-site) · [Start with the Foundation →](/ai-course-site/foundation/)
+[View Live Site →](https://itsa-d.github.io/ai-course-site/) · [Start with the Foundation →](https://itsa-d.github.io/ai-course-site/foundation/)
 
 </div>
 
