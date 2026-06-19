@@ -9,10 +9,10 @@ A free, public curriculum website teaching AI from a management and research per
 [![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-428F59?logo=githubpages&logoColor=white)](https://pages.github.com)
 [![License MIT](https://img.shields.io/badge/License-MIT-gray.svg)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/YOUR-USERNAME/ai-course-site)](https://github.com/YOUR-USERNAME/ai-course-site/commits/main)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/YOUR-USERNAME/ai-course-site/pulls)
+[![Last commit](https://img.shields.io/github/last-commit/itsA-D/ai-course-site)](https://github.com/itsA-D/ai-course-site/commits/main)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/itsA-D/ai-course-site/pulls)
 
-[View Live Site →](https://YOUR-USERNAME.github.io/ai-course-site) · [Start with the Foundation →](/foundation/)
+[View Live Site →](https://itsA-D.github.io/ai-course-site) · [Start with the Foundation →](/ai-course-site/foundation/)
 
 </div>
 
