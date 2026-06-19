@@ -1,0 +1,1247 @@
+---
+// src/pages/index.astro - Standalone landing page (full-width, no sidebar)
+// This bypasses Starlight's content collection for the homepage
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>AI for Management & Research</title>
+    <meta name="description" content="A free, practice-oriented curriculum teaching AI to managers and researchers from a shared conceptual base." />
+  </head>
+  <body>
+    <!-- SECTION 1: NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- LEFT: Logo + site name -->
+        <div class="navbar-left">
+          <div class="logo-mark">🧠</div>
+          <span class="site-name">AI for Management & Research</span>
+        </div>
+
+        <!-- CENTER: Nav links (hidden on mobile) -->
+        <div class="navbar-center">
+          <a href="#foundation" class="nav-link">Foundation</a>
+          <span class="nav-separator">·</span>
+          <a href="#research" class="nav-link">Research</a>
+          <span class="nav-separator">·</span>
+          <a href="#management" class="nav-link">Management</a>
+        </div>
+
+        <!-- RIGHT: CTA button -->
+        <div class="navbar-right">
+          <a href="/ai-course-site/foundation/f1-1-from-rules-to-learning-to-generation/" class="nav-cta">
+            Browse All Lessons →
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION 2: HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-eyebrow">FREE · OPEN · PRACTICE-ORIENTED</div>
+        <h1 class="hero-headline">
+          Learn AI from a<br />
+          Management & Research lens
+        </h1>
+        <p class="hero-subline">
+          Tutorials, lessons, and hands-on labs — every concept paired with a free tool and a doable activity. No cost, no login.
+        </p>
+        <div class="hero-cta">
+          <a href="/ai-course-site/foundation/f1-1-from-rules-to-learning-to-generation/" class="btn-primary">
+            Start with the Foundation →
+          </a>
+          <a href="/ai-course-site/foundation/" class="btn-secondary">
+            View all lessons
+          </a>
+        </div>
+        <div class="hero-stats">
+          <span class="stat-item">40+ Lessons</span>
+          <span class="stat-divider">·</span>
+          <span class="stat-item">3 Learning Tracks</span>
+          <span class="stat-divider">·</span>
+          <span class="stat-item">100% Free Tools</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: HOW IT WORKS -->
+    <section class="how-it-works" id="foundation">
+      <div class="section-container">
+        <div class="section-eyebrow">THE LEARNING PATH</div>
+        <h2 class="section-title">One foundation. Two tracks.</h2>
+        <p class="section-subtext">
+          Start with the shared Foundation, then branch into the track that matches your role.
+        </p>
+
+        <div class="cards-container">
+          <!-- Card 1: Shared Foundation -->
+          <div class="card card-mint">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="4" y="4" width="10" height="10" rx="2" stroke="var(--accent-mint)" stroke-width="2"/>
+                <rect x="18" y="4" width="10" height="10" rx="2" stroke="var(--accent-mint)" stroke-width="2"/>
+                <rect x="4" y="18" width="10" height="10" rx="2" stroke="var(--accent-mint)" stroke-width="2"/>
+                <rect x="18" y="18" width="10" height="10" rx="2" stroke="var(--accent-mint)" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Start here — everyone</h3>
+            <p class="card-body">
+              5 modules. What AI is, how LLMs work, prompting, agentic AI, and responsible use. Takes ~3 hours total.
+            </p>
+            <div class="card-tag">F1 → F5</div>
+          </div>
+
+          <!-- Arrow connector (hidden on mobile) -->
+          <div class="card-arrow">
+            <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+              <path d="M0 12H36M36 12L28 4M36 12L28 20" stroke="var(--accent-mint)" stroke-width="2" stroke-opacity="0.3"/>
+            </svg>
+          </div>
+
+          <!-- Card 2: Research Track -->
+          <div class="card card-indigo">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="10" stroke="var(--accent-indigo)" stroke-width="2"/>
+                <path d="M16 8V16L22 19" stroke="var(--accent-indigo)" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">For researchers & PhD students</h3>
+            <p class="card-body">
+              4 mini-courses. AI across the research lifecycle — literature review, synthesis, methods, silicon sampling, LLM annotation.
+            </p>
+            <div class="card-tag">R1 → R4 + Capstone</div>
+          </div>
+
+          <!-- Arrow connector (hidden on mobile) -->
+          <div class="card-arrow">
+            <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+              <path d="M0 12H36M36 12L28 4M36 12L28 20" stroke="var(--accent-mint)" stroke-width="2" stroke-opacity="0.3"/>
+            </svg>
+          </div>
+
+          <!-- Card 3: Management Track -->
+          <div class="card card-amber">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="4" y="8" width="24" height="16" rx="2" stroke="var(--accent-amber)" stroke-width="2"/>
+                <path d="M8 4H24" stroke="var(--accent-amber)" stroke-width="2"/>
+                <path d="M8 20H24" stroke="var(--accent-amber)" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">For managers & leaders</h3>
+            <p class="card-body">
+              6 mini-courses. Adoption, use cases, data decisions, agentic AI for enterprise, strategy, governance, and leading change.
+            </p>
+            <div class="card-tag">M1 → M6 + Capstone</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CURRICULUM ROADMAP (Timeline) -->
+    <section class="roadmap" id="research">
+      <div class="section-container">
+        <div class="section-eyebrow">CURRICULUM MAP</div>
+        <h2 class="section-title">What you'll learn, in sequence</h2>
+
+        <div class="timeline">
+          <!-- Row 01: F1 -->
+          <div class="timeline-row">
+            <div class="timeline-number">01</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-mint"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-module">F1 — What AI Really Is</div>
+              <div class="timeline-sessions">– F1.1, F1.2, F1.3</div>
+            </div>
+          </div>
+
+          <!-- Row 02: F2 -->
+          <div class="timeline-row">
+            <div class="timeline-number">02</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-mint"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-module">F2 — Inside GenAI</div>
+              <div class="timeline-sessions">– F2.1, F2.2, F2.3</div>
+            </div>
+          </div>
+
+          <!-- Row 03: F3 -->
+          <div class="timeline-row">
+            <div class="timeline-number">03</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-mint"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-module">F3 — Prompting & Co-intelligence</div>
+              <div class="timeline-sessions">– F3.1, F3.2, F3.3</div>
+            </div>
+          </div>
+
+          <!-- Row 04: F4 -->
+          <div class="timeline-row">
+            <div class="timeline-number">04</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-mint"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-module">F4 — From Chatbots to Agents</div>
+              <div class="timeline-sessions">– F4.1, F4.2, F4.3</div>
+            </div>
+          </div>
+
+          <!-- Row 05: F5 -->
+          <div class="timeline-row">
+            <div class="timeline-number">05</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-mint"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-module">F5 — Responsible AI</div>
+              <div class="timeline-sessions">– F5.1, F5.2</div>
+            </div>
+          </div>
+
+          <!-- Row 06: Branch point -->
+          <div class="timeline-row branch-row">
+            <div class="timeline-number">06</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-mint"></div>
+              <!-- Fork SVG -->
+              <svg class="fork-svg" viewBox="0 0 100 60" fill="none">
+                <path d="M50 0 V30" stroke="var(--accent-mint)" stroke-width="2"/>
+                <path d="M50 30 L20 60" stroke="var(--accent-indigo)" stroke-width="2"/>
+                <path d="M50 30 L80 60" stroke="var(--accent-amber)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-module">Choose your track</div>
+              <div class="timeline-sessions">– Research or Management</div>
+            </div>
+          </div>
+
+          <!-- Row 07: Research -->
+          <div class="timeline-row">
+            <div class="timeline-number">07</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-indigo"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-module">Research: R1–R4</div>
+              <div class="timeline-sessions">– R1, R2, R3, R4 + Capstone</div>
+            </div>
+          </div>
+
+          <!-- Row 07: Management -->
+          <div class="timeline-row">
+            <div class="timeline-number">07</div>
+            <div class="timeline-line">
+              <div class="timeline-dot dot-amber"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-module">Management: M1–M6</div>
+              <div class="timeline-sessions">– M1, M2, M3, M4, M5, M6 + Capstone</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: TOOLS STRIP -->
+    <section class="tools-strip">
+      <div class="section-container">
+        <p class="tools-text">Every lesson uses free, browser-based tools</p>
+        <div class="tools-scroll">
+          <span class="tool-pill">ChatGPT</span>
+          <span class="tool-pill">Claude</span>
+          <span class="tool-pill">Gemini</span>
+          <span class="tool-pill">NotebookLM</span>
+          <span class="tool-pill">Perplexity</span>
+          <span class="tool-pill">Elicit</span>
+          <span class="tool-pill">Colab</span>
+          <span class="tool-pill">Hugging Face</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: TRACK DEEP-DIVE CARDS -->
+    <section class="track-cards" id="management">
+      <!-- Foundation Track Card -->
+      <div class="track-card track-card-mint">
+        <div class="track-card-content">
+          <div class="track-number">01</div>
+          <div class="track-eyebrow">FOR EVERYONE</div>
+          <h3 class="track-title">Shared Foundation</h3>
+          <p class="track-description">
+            Essential AI concepts for everyone — 5 modules covering the fundamentals: what AI really is, how GenAI works, prompting, agentic AI, and responsible AI.
+          </p>
+          <div class="track-badge">14 sessions</div>
+          <a href="/ai-course-site/foundation/f1-1-from-rules-to-learning-to-generation/" class="track-cta">
+            Start Foundation →
+          </a>
+        </div>
+        <div class="track-card-list">
+          <div class="track-list-item">F1 — What AI Really Is</div>
+          <div class="track-list-item">F2 — Inside GenAI</div>
+          <div class="track-list-item">F3 — Working with AI</div>
+          <div class="track-list-item">F4 — From Chatbots to Agents</div>
+          <div class="track-list-item">F5 — Responsible AI</div>
+        </div>
+      </div>
+
+      <!-- Research Track Card -->
+      <div class="track-card track-card-indigo">
+        <div class="track-card-list">
+          <div class="track-list-item">R1 — Opening to AI</div>
+          <div class="track-list-item">R2 — GenAI in Practice</div>
+          <div class="track-list-item">R3 — Theory & Strategy</div>
+          <div class="track-list-item">R4 — GenAI as Research Method</div>
+          <div class="track-list-item">Capstone Project</div>
+        </div>
+        <div class="track-card-content">
+          <div class="track-number">02</div>
+          <div class="track-eyebrow">FOR RESEARCHERS</div>
+          <h3 class="track-title">Research Track</h3>
+          <p class="track-description">
+            AI across the research lifecycle — literature review, synthesis, methods, silicon sampling, LLM annotation, and validity standards.
+          </p>
+          <div class="track-badge">16 sessions + capstone</div>
+          <a href="/ai-course-site/research/r1-1-why-ai-matters-for-research-now/" class="track-cta">
+            Start Research →
+          </a>
+        </div>
+      </div>
+
+      <!-- Management Track Card -->
+      <div class="track-card track-card-amber">
+        <div class="track-card-content">
+          <div class="track-number">03</div>
+          <div class="track-eyebrow">FOR MANAGERS</div>
+          <h3 class="track-title">Management Track</h3>
+          <p class="track-description">
+            AI-literate management, business applications, data decisions, agentic AI for enterprise, strategy, governance, and leading change.
+          </p>
+          <div class="track-badge">14 sessions + capstone</div>
+          <a href="/ai-course-site/management/m1-1-intelligent-systems-what-ai-actually-is-for-business/" class="track-cta">
+            Start Management →
+          </a>
+        </div>
+        <div class="track-card-list">
+          <div class="track-list-item">M1 — AI-Literate Manager</div>
+          <div class="track-list-item">M2 — GenAI in Business</div>
+          <div class="track-list-item">M3 — Data & Decisions</div>
+          <div class="track-list-item">M4 — Agentic AI for Enterprise</div>
+          <div class="track-list-item">M5 — Strategy & Advantage</div>
+          <div class="track-list-item">M6 — Governance & Change</div>
+          <div class="track-list-item">Capstone Project</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Logo + tagline -->
+          <div class="footer-col">
+            <div class="footer-logo">🧠 AI for Management & Research</div>
+            <p class="footer-tagline">
+              Prepared for Prof. Abhishek Kumar Jha, SPJIMR
+            </p>
+          </div>
+
+          <!-- Col 2: Foundation -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Foundation</h4>
+            <ul class="footer-links">
+              <li><a href="/ai-course-site/foundation/f1-1-from-rules-to-learning-to-generation/">F1.1</a></li>
+              <li><a href="/ai-course-site/foundation/f1-2-live-ai-vs-marketing-hype/">F1.2</a></li>
+              <li><a href="/ai-course-site/foundation/f1-3-mapping-the-ai-landscape/">F1.3</a></li>
+              <li><a href="/ai-course-site/foundation/f2-1-tokens-embeddings-and-prediction/">F2.1</a></li>
+              <li><a href="/ai-course-site/foundation/f3-1-prompting-fundamentals/">F3.1</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Research Track -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Research Track</h4>
+            <ul class="footer-links">
+              <li><a href="/ai-course-site/research/r1-1-why-ai-matters-for-research-now/">R1.1</a></li>
+              <li><a href="/ai-course-site/research/r2-1-literature-discovery-and-synthesis/">R2.1</a></li>
+              <li><a href="/ai-course-site/research/r3-1-theory-development-and-hypothesis-generation/">R3.1</a></li>
+              <li><a href="/ai-course-site/research/r4-1-llms-for-text-annotation-and-classification/">R4.1</a></li>
+              <li><a href="/ai-course-site/research/capstone/">Capstone</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Management Track -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Management Track</h4>
+            <ul class="footer-links">
+              <li><a href="/ai-course-site/management/m1-1-intelligent-systems-what-ai-actually-is-for-business/">M1.1</a></li>
+              <li><a href="/ai-course-site/management/m2-2-genai-across-business-functions/">M2.2</a></li>
+              <li><a href="/ai-course-site/management/m3-1-data-before-models-why-transformations-win-or-fail/">M3.1</a></li>
+              <li><a href="/ai-course-site/management/m5-1-ai-strategy-and-business-models/">M5.1</a></li>
+              <li><a href="/ai-course-site/management/capstone/">Capstone</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 · MIT License · Content © Prof. Abhishek Kumar Jha, SPJIMR
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  /* Color tokens from CLAUDE.md §5.2 */
+  :root {
+    --bg-base: #0B0E14;
+    --bg-surface: #141925;
+    --bg-surface-raised: #1B2230;
+    --border: #2A3142;
+    --text-primary: #E8EAF0;
+    --text-muted: #8B93A7;
+    --accent-mint: #2DD4BF;
+    --accent-indigo: #6C8DF7;
+    --accent-amber: #F2B84B;
+  }
+
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    line-height: 1.6;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* SECTION 1: NAVBAR */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+  }
+
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .logo-mark {
+    width: 32px;
+    height: 32px;
+    background-color: var(--accent-mint);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+
+  .site-name {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .navbar-center {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    transition: color 150ms ease;
+  }
+
+  .nav-link:hover {
+    color: var(--accent-mint);
+  }
+
+  .nav-separator {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-cta {
+    border: 1px solid var(--accent-mint);
+    color: var(--accent-mint);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 150ms ease;
+  }
+
+  .nav-cta:hover {
+    background-color: var(--accent-mint);
+    color: var(--bg-base);
+  }
+
+  /* SECTION 2: HERO */
+  .hero {
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-base);
+    background-image: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(45, 212, 191, 0.07), transparent);
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--accent-mint);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-headline {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-subline {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    max-width: 560px;
+    line-height: 1.6;
+    margin: 0 auto 2rem;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    background-color: var(--accent-mint);
+    color: var(--bg-base);
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    transition: all 150ms ease;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-secondary {
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    transition: all 150ms ease;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--accent-mint);
+    color: var(--accent-mint);
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+  }
+
+  .stat-item {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  .stat-divider {
+    color: var(--border);
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .navbar-center {
+      display: none;
+    }
+
+    .hero-headline {
+      font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .hero-subline {
+      font-size: 1rem;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .hero-stats {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .stat-divider {
+      display: none;
+    }
+  }
+
+  /* SECTION 3: HOW IT WORKS */
+  .how-it-works {
+    background-color: var(--bg-surface);
+    padding: 5rem 1.5rem;
+  }
+
+  .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--accent-mint);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtext {
+    font-size: 1rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+  }
+
+  .cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background-color: var(--bg-surface-raised);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem;
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    transition: all 200ms ease;
+    position: relative;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 0 1px var(--accent-color);
+  }
+
+  .card-mint {
+    --accent-color: var(--accent-mint);
+  }
+
+  .card-mint:hover {
+    border-color: var(--accent-mint);
+  }
+
+  .card-indigo {
+    --accent-color: var(--accent-indigo);
+  }
+
+  .card-indigo:hover {
+    border-color: var(--accent-indigo);
+  }
+
+  .card-amber {
+    --accent-color: var(--accent-amber);
+  }
+
+  .card-amber:hover {
+    border-color: var(--accent-amber);
+  }
+
+  .card-icon {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .card-body {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .card-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .card-mint .card-tag {
+    background-color: rgba(45, 212, 191, 0.15);
+    color: var(--accent-mint);
+  }
+
+  .card-indigo .card-tag {
+    background-color: rgba(108, 141, 247, 0.15);
+    color: var(--accent-indigo);
+  }
+
+  .card-amber .card-tag {
+    background-color: rgba(242, 184, 75, 0.15);
+    color: var(--accent-amber);
+  }
+
+  .card-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .card-arrow {
+      display: none;
+    }
+
+    .card {
+      max-width: 100%;
+    }
+  }
+
+  /* SECTION 4: ROADMAP TIMELINE */
+  .roadmap {
+    background-color: var(--bg-base);
+    padding: 5rem 1.5rem;
+  }
+
+  .timeline {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .timeline-row {
+    display: grid;
+    grid-template-columns: 80px 40px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .timeline-number {
+    font-size: 4rem;
+    font-weight: 200;
+    color: var(--border);
+    line-height: 1;
+    position: relative;
+  }
+
+  .timeline-number::before {
+    content: 'MODULE';
+    position: absolute;
+    top: -0.65rem;
+    left: 0;
+    font-size: 0.65rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .timeline-line {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-mint);
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-dot.dot-mint {
+    background-color: var(--accent-mint);
+  }
+
+  .timeline-dot.dot-indigo {
+    background-color: var(--accent-indigo);
+  }
+
+  .timeline-dot.dot-amber {
+    background-color: var(--accent-amber);
+  }
+
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: var(--border);
+  }
+
+  .timeline-row:last-child .timeline-line::before {
+    display: none;
+  }
+
+  .branch-row .timeline-line::before {
+    display: none;
+  }
+
+  .fork-svg {
+    width: 40px;
+    height: 24px;
+    margin-top: 0.5rem;
+  }
+
+  .timeline-content {
+    padding-top: 0.25rem;
+  }
+
+  .timeline-module {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-sessions {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-row {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-number {
+      display: none;
+    }
+
+    .timeline-line {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .timeline-line::before {
+      display: none;
+    }
+
+    .fork-svg {
+      display: none;
+    }
+  }
+
+  /* SECTION 5: TOOLS STRIP */
+  .tools-strip {
+    background-color: var(--bg-surface);
+    padding: 3rem 1.5rem;
+  }
+
+  .tools-text {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tools-scroll {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .tool-pill {
+    background-color: var(--bg-surface-raised);
+    border: 1px solid var(--border);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    transition: all 150ms ease;
+  }
+
+  .tool-pill:hover {
+    border-color: var(--accent-mint);
+    color: var(--text-primary);
+  }
+
+  /* SECTION 6: TRACK DEEP-DIVE CARDS */
+  .track-cards {
+    background-color: var(--bg-base);
+    padding: 5rem 1.5rem;
+  }
+
+  .track-card {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 12px;
+    padding: 2.5rem;
+  }
+
+  .track-card-mint {
+    background-color: rgba(45, 212, 191, 0.04);
+    border-left: 4px solid var(--accent-mint);
+  }
+
+  .track-card-indigo {
+    background-color: rgba(108, 141, 247, 0.04);
+    border-left: 4px solid var(--accent-indigo);
+  }
+
+  .track-card-amber {
+    background-color: rgba(242, 184, 75, 0.04);
+    border-left: 4px solid var(--accent-amber);
+  }
+
+  .track-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .track-card-content {
+    padding-right: 1rem;
+  }
+
+  .track-card-indigo .track-card-content {
+    padding-right: 0;
+    padding-left: 1rem;
+    order: 2;
+  }
+
+  .track-card-indigo .track-card-list {
+    order: 1;
+  }
+
+  .track-number {
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--border);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .track-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .track-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .track-description {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .track-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .track-card-mint .track-badge {
+    background-color: rgba(45, 212, 191, 0.15);
+    color: var(--accent-mint);
+  }
+
+  .track-card-indigo .track-badge {
+    background-color: rgba(108, 141, 247, 0.15);
+    color: var(--accent-indigo);
+  }
+
+  .track-card-amber .track-badge {
+    background-color: rgba(242, 184, 75, 0.15);
+    color: var(--accent-amber);
+  }
+
+  .track-cta {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: color 150ms ease;
+  }
+
+  .track-cta:hover {
+    color: var(--accent-mint);
+  }
+
+  .track-card-indigo .track-cta:hover {
+    color: var(--accent-indigo);
+  }
+
+  .track-card-amber .track-cta:hover {
+    color: var(--accent-amber);
+  }
+
+  .track-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .track-list-item {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    transition: all 150ms ease;
+  }
+
+  .track-card-mint .track-list-item {
+    background-color: rgba(45, 212, 191, 0.06);
+    border-left: 3px solid var(--accent-mint);
+  }
+
+  .track-card-mint .track-list-item:hover {
+    background-color: rgba(45, 212, 191, 0.1);
+  }
+
+  .track-card-indigo .track-list-item {
+    background-color: rgba(108, 141, 247, 0.06);
+    border-left: 3px solid var(--accent-indigo);
+  }
+
+  .track-card-indigo .track-list-item:hover {
+    background-color: rgba(108, 141, 247, 0.1);
+  }
+
+  .track-card-amber .track-list-item {
+    background-color: rgba(242, 184, 75, 0.06);
+    border-left: 3px solid var(--accent-amber);
+  }
+
+  .track-card-amber .track-list-item:hover {
+    background-color: rgba(242, 184, 75, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .track-card {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    .track-card-content {
+      padding-right: 0;
+      padding-bottom: 1.5rem;
+      order: 1;
+    }
+
+    .track-card-indigo .track-card-content {
+      padding-left: 0;
+      order: 1;
+    }
+
+    .track-card-list {
+      order: 2;
+    }
+
+    .track-card-indigo .track-card-list {
+      order: 2;
+    }
+  }
+
+  /* SECTION 7: FOOTER */
+  .footer {
+    background-color: var(--bg-surface);
+    padding: 4rem 1.5rem 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .footer-heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-links a {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    transition: color 150ms ease;
+  }
+
+  .footer-links a:hover {
+    color: var(--accent-mint);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-col:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-col:first-child {
+      grid-column: 1;
+    }
+  }
+</style>

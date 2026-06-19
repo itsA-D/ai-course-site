@@ -78,3 +78,56 @@
   font-size: 0.75rem;
   font-weight: 600;
 }
+
+/* PART 3: Docs-page polish */
+
+/* Override Starlight's default accent color to mint */
+:root {
+  --sl-color-accent: var(--accent-mint);
+  --sl-color-accent-low: rgba(45, 212, 191, 0.15);
+}
+
+[data-theme='light'] {
+  --sl-color-accent: var(--accent-mint);
+  --sl-color-accent-low: rgba(13, 148, 136, 0.1);
+}
+
+/* HandsOn callout block styling */
+.hands-on-callout {
+  background-color: rgba(45, 212, 191, 0.06);
+  border-left: 3px solid #2DD4BF;
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+[data-theme='light'] .hands-on-callout {
+  background-color: rgba(13, 148, 136, 0.06);
+  border-left-color: #0d9488;
+}
+
+/* ToolList cards on lesson pages */
+.tool-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .tool-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tool-card {
+  background-color: var(--sl-color-bg-inline-code);
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  transition: border-color 150ms ease;
+}
+
+.tool-card:hover {
+  border-color: var(--accent-mint);
+}
